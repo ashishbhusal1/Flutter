@@ -40,7 +40,7 @@ class _CurrencyConverterMaterialPageState
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'NPR $result',
+              'NPR ${result != 0 ? result.toStringAsFixed(2) : result.toStringAsFixed(0)}',
               style: const TextStyle(
                   fontSize: 55,
                   fontWeight: FontWeight.bold,
